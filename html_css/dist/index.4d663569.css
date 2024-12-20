@@ -1,0 +1,157 @@
+body {
+  background: linear-gradient(135deg, #fff 30%, #f0f0f0 70%);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  background: #333;
+  padding: 20px;
+}
+
+.nav-list {
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.nav-list a:hover {
+  color: orange;
+}
+
+section {
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+.about-card {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  max-width: 150px;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+}
+
+.project-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.project-image {
+  border-radius: 10px;
+  max-width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.skills-list {
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact-link {
+  color: #333;
+  margin: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contact-link:hover {
+  color: #0077b5;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  background: #333;
+  padding: 20px;
+}
+
+.scroll-icons {
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.scroll-icon {
+  color: #fff;
+  text-align: center;
+  background: orange;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px #0003;
+}
+
+.scroll-icon:hover {
+  background: #ff8700;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-heading {
+  animation: 2s ease-in-out fadeIn;
+}
+/*# sourceMappingURL=index.4d663569.css.map */
