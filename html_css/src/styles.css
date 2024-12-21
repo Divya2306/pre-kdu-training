@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffffff 30%, #f0f0f0 70%);
+}
+
+header {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #ffa500;
+}
+
+/* Sections */
+section {
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  text-align: center;
+}
+
+/* About Me Section */
+.about-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  max-width: 150px;
+  height: auto;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Project Section */
+.project-card {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+/* Skills List */
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Contact Links */
+.contact-link {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  color: #0077b5;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+/* Scroll Icons */
+.scroll-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scroll-icon {
+  background: #ffa500;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-icon:hover {
+  background: #ff8700;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-heading {
+  animation: fadeIn 2s ease-in-out;
+}
