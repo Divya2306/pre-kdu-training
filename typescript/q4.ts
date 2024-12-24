@@ -5,3 +5,14 @@
 
   Export the function findById so that it can be used in the test file.
 */
+
+import { User } from './q1';
+
+// Utility function to find a user by ID, with an option to throw an error
+export function findById(users: User[], id: number, throwOnError: boolean = false): User | undefined | never {
+  const user = users.find(u => u.id === id);
+  if (!user && throwOnError) {
+    throw new Error(`User with ID ${id} not found`);
+  }
+  return user;
+}
