@@ -5,3 +5,8 @@
 
   Export the filterArray function so that the code can be tested in the test file.
 */
+
+// Generic function to filter an array based on a predicate
+export function filterArray<T>(arr: T[], predicate: (item: T) => boolean): T[] {
+  return arr.filter(predicate);
+}

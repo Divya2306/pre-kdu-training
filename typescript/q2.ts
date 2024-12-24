@@ -16,3 +16,21 @@
   Export the enum Status, the UserStatus tuple type, and the printUserStatus function.
   So that the code can be tested in the test file.
  */
+
+import { User } from "./q1";
+
+// Enum for user status
+export enum Status {
+  Active = "Active",
+  Inactive = "Inactive",
+  Suspended = "Suspended",
+}
+
+// User type
+export type UserStatus = [User, Status];
+
+// Function to print user status
+export function printUserStatus(userStatus: UserStatus): void {
+  const [user, status] = userStatus;
+  console.log(`${user.name} is currently ${status}.`);
+}
